@@ -1,145 +1,143 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
-/* Base styling for mobile-first */
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    overflow-x: hidden;
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
+
+The desktop-first pre-defined media queries:
+/* 2xl */
+@media (max-width: 1536px) {}
+
+/* xl */
+@media (max-width: 1280px) {}
+
+/* lg */
+@media (max-width: 1024px) {}
+
+/* md */
+@media (max-width: 768px) {}
+
+/* sm */
+@media (max-width: 640px) {}
+
+/* xs */
+@media (max-width: 475px) {}
+
+Mobile container utility class:
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
-/* Navbar adjustments for mobile */
-.navbar-top ul.right {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    list-style: none;
-    padding: 10px;
+/* xs */
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
 }
 
-.navbar-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
+/* sm */
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
 }
 
-.navbar-bottom .menu-right {
-    display: none; /* Hide on mobile */
-}
-
-/* Showcase section base styling */
-.showcase-content {
-    text-align: center;
-    padding: 20px;
-}
-
-.showcase-content h1 {
-    font-size: 1.8rem;
-}
-
-.showcase-content a.btn {
-    padding: 10px 20px;
-    margin: 5px;
-}
-
-/* Services and Goal sections */
-#services .wrapper,
-#goal .goal {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-.goal-img img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.goal-text h2 {
-    font-size: 1.5rem;
-}
-
-/* Team Section */
-.card-items {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.card {
-    flex: 1 1 100%;
-    margin: 10px 0;
-}
-
-.card-header img {
-    width: 100%;
-    height: auto;
-}
-
-/* Footer Section */
-.footer-bottom {
-    font-size: 0.8rem;
-    padding: 10px;
-    background: #333;
-    color: white;
-    text-align: center;
-}
-
-/* Tablet and Desktop styles */
+/* md */
 @media (min-width: 768px) {
-    .navbar-bottom .menu-right {
-        display: flex;
-        gap: 20px;
-    }
-
-    .showcase-content h1 {
-        font-size: 2.5rem;
-    }
-
-    .goal-text h2 {
-        font-size: 2rem;
-    }
-
-    .card-items {
-        flex-direction: row;
-    }
-
-    .card {
-        flex: 1;
-        max-width: 30%;
-    }
+  .container {
+    max-width: 768px;
+  }
 }
 
-/* Phone styles */
+/* lg */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+Desktop container utility class:
+.container {
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* 2xl */
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* md */
 @media (max-width: 768px) {
-    .showcase-content h1 {
-        font-size: 1.5rem;
-        padding: 0 10px;
-    }
-
-    .goal-text h2, .card-body h3 {
-        font-size: 1.2rem;
-    }
-
-    .navbar-bottom {
-        flex-direction: column;
-        padding: 10px;
-    }
-    
-    .goal,
-    .card-items {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .card {
-        width: 90%;
-    }
+  .container {
+    max-width: 640px;
+  }
 }
+
+/* sm */
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .container {
+    width: 100%;
+  }
+
 
 
 
