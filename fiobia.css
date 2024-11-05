@@ -1,5 +1,110 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
+/* General reset for mobile responsiveness */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar adjustments for mobile */
+.navbar-top ul.right {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.navbar-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar-bottom .menu-right {
+    display: none; /* Hide on mobile */
+}
+
+@media (max-width: 768px) {
+    /* Mobile navigation */
+    .menu-right {
+        display: block;
+        text-align: center;
+    }
+    .navbar-bottom {
+        flex-direction: column;
+    }
+    .navbar-bottom .brand-left {
+        margin-bottom: 10px;
+    }
+
+    /* Showcase section adjustments */
+    .showcase-content h1 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .showcase-content a.btn {
+        padding: 10px 20px;
+        margin: 10px 0;
+    }
+
+    /* Goal section adjustments */
+    .goal {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .goal-img img {
+        max-width: 100%;
+        height: auto;
+    }
+    .goal-text h2 {
+        font-size: 1.2rem;
+    }
+
+    /* Card and Team section adjustments */
+    .card-items {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .card {
+        flex: 1;
+        margin: 10px 0;
+    }
+    .card-header img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Footer adjustments */
+    .footer-bottom {
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+}
+
+/* Fine-tune for smaller devices (e.g., phones) */
+@media (max-width: 480px) {
+    .showcase-content h1 {
+        font-size: 1.2rem;
+    }
+    .showcase-content a.btn {
+        font-size: 0.9rem;
+    }
+    .goal-text h2, .text-center h2 {
+        font-size: 1rem;
+    }
+    .goal-text p, .card-body h3 {
+        font-size: 0.9rem;
+    }
+    .card-body h4 {
+        font-size: 0.8rem;
+    }
+}
+
+
 *{
     margin: 0;
     padding: 0;
